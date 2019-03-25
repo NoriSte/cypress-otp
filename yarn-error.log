@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/noriste/Sites/noriste/cypress-otp/package.json: Unexpected token } in JSON at position 891
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "cypress-otp",
+    "version": "1.0.0",
+    "description": "Encode a Cypress fixture with Protocol Buffers",
+    "main": "src/index.js",
+    "repository": "https://github.com/NoriSte/cypress-otp.git",
+    "author": "NoriSte <nori.ste.magni@gmail.com>",
+    "keywords": [
+      "cypress",
+      "cypress plugin",
+      "otp",
+      "2fa",
+      "mfa"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+      "cz-conventional-changelog": "^2.1.0",
+      "start-server-and-test": "^1.7.12"
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
+    },
+    "scripts": {
+      "commit": "npx git-cz",
+      "serve": "npx serve public",
+      "cy:open": "cypress open",
+      "test": "npm run cy:start-server-and-test",
+      "cy:start-server-and-test": "npx start-server-and-test serve :5000 cy:run",
+      "cy:run": "cypress run"
+    },
+    "dependencies": {
+      "cypress": "^3.2.0",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
