@@ -1,6 +1,6 @@
 {
   "name": "cypress-otp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encode a Cypress fixture with Protocol Buffers",
   "main": "src/index.js",
   "repository": "https://github.com/NoriSte/cypress-otp.git",
