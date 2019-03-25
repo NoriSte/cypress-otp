@@ -8,7 +8,7 @@ Encode a fixture with OTP
 
 <img src="assets/cy-otp.jpg" alt="Cypress OTP" style="width:400px;"/>
 
-Use this plugin to insert a valid OTP code in a [Cypress](https://www.cypress.io) test.
+Use this plugin to insert a valid OTP token in a [Cypress](https://www.cypress.io) test.
 
 # Installation
 ```bash
