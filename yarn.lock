@@ -552,10 +552,10 @@ cross-spawn@^7.0.0:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-cypress-wait-until@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/cypress-wait-until/-/cypress-wait-until-1.6.0.tgz#c70d403ec31cad7ec73220c4de9e58f3e5a57399"
-  integrity sha512-uGbEKZQ8tnCvq+G058jvcj1zMb6dF2lg5KxsWXnkk1EQ/5lZewvqGWb/RV7hiPvwxQblUDBH1Chb8tyjH2ZmLg==
+cypress-wait-until@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/cypress-wait-until/-/cypress-wait-until-1.6.1.tgz#2554191e5ecdc9ff21a045e09289e5a1ee76f6b7"
+  integrity sha512-bI4p9Pou6EoIU0v9RyjPOoKH6aiNXg1TIVXyGmlpjcOhdIbg1OVSs3fmMQLxnQAm6xVY4rLWWQg3gbIzuToxTw==
 
 cypress@^3.2.0:
   version "3.2.0"
