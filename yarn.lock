@@ -86,6 +86,44 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
+"@otplib/core@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@otplib/core/-/core-12.0.0.tgz#880490a26b3fd101fcf0c692f62e2dca2728dc7e"
+  integrity sha512-GeIw4fAaiINi4+ssrcBGLebuKzi6I8cMy9cO20YEFjd3CmQU9fz7AF2GIDUwb8zP/vZsooak+cqaxDMcmQ6k3A==
+
+"@otplib/plugin-crypto@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@otplib/plugin-crypto/-/plugin-crypto-12.0.0.tgz#166a6da2ca8394bc4b7a6cf20d1937897008f662"
+  integrity sha512-JXc3FPJ63nwYA7kE2j1i68BuzXcF97BMxHbmd2/pRhbgCcEwWGnH7wsCbqn6r8ntQOZRFV0cJE7Du6loNVLndw==
+  dependencies:
+    "@otplib/core" "^12.0.0"
+
+"@otplib/plugin-thirty-two@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@otplib/plugin-thirty-two/-/plugin-thirty-two-12.0.0.tgz#cf9529d6a58e683997e7f667efaed9ed98756d09"
+  integrity sha512-TufBmqVa4+/GX+JRhQ20JrTr3gHMem2JFGhs/ntBmBZy35s64mQkQJGeyXU3xC06LJHc6TfYIWfat/ZRnZJGoQ==
+  dependencies:
+    "@otplib/core" "^12.0.0"
+    thirty-two "^1.0.2"
+
+"@otplib/preset-default@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@otplib/preset-default/-/preset-default-12.0.0.tgz#8d7a0a9b3184d83715ebb5797ffdc42c11ff17b9"
+  integrity sha512-o5iOGCfzDb0CAT4Gryk8nt9ktPgmghICnyBEnJjtJSo8cIGf8RxRk08F4tVTdzBypbZTpKjZPNTUIVK52nAcSw==
+  dependencies:
+    "@otplib/core" "^12.0.0"
+    "@otplib/plugin-crypto" "^12.0.0"
+    "@otplib/plugin-thirty-two" "^12.0.0"
+
+"@otplib/preset-v11@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@otplib/preset-v11/-/preset-v11-12.0.0.tgz#6ff3e73caef0dcc2bf33e4f04df87ba4a2139a67"
+  integrity sha512-D7Ceh84pxBR1/y24hDSes8babBBmePsuy3RSMGJcax1EM/fuEHey+yXG/yfOtJ6HfHJ5VJIDwvHAwedKVPbP8w==
+  dependencies:
+    "@otplib/core" "^12.0.0"
+    "@otplib/plugin-crypto" "^12.0.0"
+    "@otplib/plugin-thirty-two" "^12.0.0"
+
 "@types/node@^12.0.2":
   version "12.6.8"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
@@ -1885,12 +1923,14 @@ os-tmpdir@~1.0.2:
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
-otplib@11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/otplib/-/otplib-11.0.1.tgz#7d64aa87029f07c99c7f96819fb10cdb67dea886"
-  integrity sha512-oi57teljNyWTC/JqJztHOtSGeFNDiDh5C1myd+faocUtFAX27Sm1mbx69kpEJ8/JqrblI3kAm4Pqd6tZJoOIBQ==
+otplib@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/otplib/-/otplib-12.0.0.tgz#e170eee47c16a8e906e0f3d61e0ca2932685d566"
+  integrity sha512-i9P9SimOWt/kjpTq3MAWqybwArMWfYfbYJhubV5K1PEadTLm9WkUNUGI0tu6xMRQIzTcglagw9lSWX1BE9a+mw==
   dependencies:
-    thirty-two "1.0.2"
+    "@otplib/core" "^12.0.0"
+    "@otplib/preset-default" "^12.0.0"
+    "@otplib/preset-v11" "^12.0.0"
 
 p-finally@^1.0.0:
   version "1.0.0"
@@ -2492,7 +2532,7 @@ symbol-observable@1.0.1:
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.1.tgz#8340fc4702c3122df5d22288f88283f513d3fdd4"
   integrity sha1-g0D8RwLDEi310iKI+IKD9RPT/dQ=
 
-thirty-two@1.0.2:
+thirty-two@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/thirty-two/-/thirty-two-1.0.2.tgz#4ca2fffc02a51290d2744b9e3f557693ca6b627a"
   integrity sha1-TKL//AKlEpDSdEueP1V2k8prYno=
