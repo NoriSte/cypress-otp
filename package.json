@@ -16,7 +16,7 @@
   "devDependencies": {
     "cypress-wait-until": "1.6.1",
     "cz-conventional-changelog": "3.0.2",
-    "start-server-and-test": "1.10.6"
+    "start-server-and-test": "1.10.7"
   },
   "config": {
     "commitizen": {
