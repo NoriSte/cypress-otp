@@ -4,3 +4,4 @@ screenshots
 .DS_Store
 .vscode
 yarn-lock.json
+package-lock.json
