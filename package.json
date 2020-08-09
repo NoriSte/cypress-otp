@@ -17,7 +17,7 @@
     "cypress": "4.12.1",
     "cypress-wait-until": "1.7.1",
     "cz-conventional-changelog": "3.2.0",
-    "start-server-and-test": "1.11.2"
+    "start-server-and-test": "1.11.3"
   },
   "config": {
     "commitizen": {
